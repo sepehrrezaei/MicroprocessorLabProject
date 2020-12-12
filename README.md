@@ -1,1 +1,1 @@
-# Sepehr Rezaei - Microprocessor - 962023012
+# Sepehr Rezaei - Microprocessor Lab - 962023012
