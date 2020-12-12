@@ -1210,99 +1210,99 @@ _main:
 ; 0000 0017 
 ; 0000 0018     while (1) {
 _0x3:
-; 0000 0019             if(PINA.0==1)
+; 0000 0019         if(PINA.0==1)
 	SBIS 0x19,0
 	RJMP _0x6
-; 0000 001A             {
+; 0000 001A         {
 ; 0000 001B             //0
-; 0000 001C                 LED_0 = onBool;
+; 0000 001C             LED_0 = onBool;
 	RCALL SUBOPT_0x0
-; 0000 001D                 delay_ms(100);
-; 0000 001E                 LED_0 = offBool;
+; 0000 001D             delay_ms(100);
+; 0000 001E             LED_0 = offBool;
 ; 0000 001F             //1
-; 0000 0020                 LED_1 = onBool;
+; 0000 0020             LED_1 = onBool;
 	RCALL SUBOPT_0x1
-; 0000 0021                 delay_ms(100);
-; 0000 0022                 LED_1 = offBool;
+; 0000 0021             delay_ms(100);
+; 0000 0022             LED_1 = offBool;
 ; 0000 0023             //2
-; 0000 0024                 LED_2 = onBool;
+; 0000 0024             LED_2 = onBool;
 	RCALL SUBOPT_0x2
-; 0000 0025                 delay_ms(100);
-; 0000 0026                 LED_2 = offBool;
+; 0000 0025             delay_ms(100);
+; 0000 0026             LED_2 = offBool;
 ; 0000 0027             //3
-; 0000 0028                 LED_3 = onBool;
+; 0000 0028             LED_3 = onBool;
 	RCALL SUBOPT_0x3
-; 0000 0029                 delay_ms(100);
-; 0000 002A                 LED_3 = offBool;
+; 0000 0029             delay_ms(100);
+; 0000 002A             LED_3 = offBool;
 ; 0000 002B             //4
-; 0000 002C                 LED_4 = onBool;
+; 0000 002C             LED_4 = onBool;
 	RCALL SUBOPT_0x4
-; 0000 002D                 delay_ms(100);
-; 0000 002E                 LED_4 = offBool;
+; 0000 002D             delay_ms(100);
+; 0000 002E             LED_4 = offBool;
 ; 0000 002F             //5
-; 0000 0030                 LED_5 = onBool;
+; 0000 0030             LED_5 = onBool;
 	RCALL SUBOPT_0x5
-; 0000 0031                 delay_ms(100);
-; 0000 0032                 LED_5 = offBool;
+; 0000 0031             delay_ms(100);
+; 0000 0032             LED_5 = offBool;
 ; 0000 0033             //6
-; 0000 0034                 LED_6 = onBool;
+; 0000 0034             LED_6 = onBool;
 	RCALL SUBOPT_0x6
-; 0000 0035                 delay_ms(100);
-; 0000 0036                 LED_6 = offBool;
+; 0000 0035             delay_ms(100);
+; 0000 0036             LED_6 = offBool;
 ; 0000 0037             //7
-; 0000 0038                 LED_7 = onBool;
+; 0000 0038             LED_7 = onBool;
 	SBI  0x18,7
-; 0000 0039                 delay_ms(100);
+; 0000 0039             delay_ms(100);
 	LDI  R26,LOW(100)
 	LDI  R27,0
 	CALL _delay_ms
-; 0000 003A                 LED_7 = offBool;
+; 0000 003A             LED_7 = offBool;
 	CBI  0x18,7
 ; 0000 003B             //6
-; 0000 003C                 LED_6 = onBool;
+; 0000 003C             LED_6 = onBool;
 	RCALL SUBOPT_0x6
-; 0000 003D                 delay_ms(100);
-; 0000 003E                 LED_6 = offBool;
+; 0000 003D             delay_ms(100);
+; 0000 003E             LED_6 = offBool;
 ; 0000 003F             //5
-; 0000 0040                 LED_5 = onBool;
+; 0000 0040             LED_5 = onBool;
 	RCALL SUBOPT_0x5
-; 0000 0041                 delay_ms(100);
-; 0000 0042                 LED_5 = offBool;
+; 0000 0041             delay_ms(100);
+; 0000 0042             LED_5 = offBool;
 ; 0000 0043             //4
-; 0000 0044                 LED_4 = onBool;
+; 0000 0044             LED_4 = onBool;
 	RCALL SUBOPT_0x4
-; 0000 0045                 delay_ms(100);
-; 0000 0046                 LED_4 = offBool;
+; 0000 0045             delay_ms(100);
+; 0000 0046             LED_4 = offBool;
 ; 0000 0047             //3
-; 0000 0048                 LED_3 = onBool;
+; 0000 0048             LED_3 = onBool;
 	RCALL SUBOPT_0x3
-; 0000 0049                 delay_ms(100);
-; 0000 004A                 LED_3 = offBool;
+; 0000 0049             delay_ms(100);
+; 0000 004A             LED_3 = offBool;
 ; 0000 004B             //2
-; 0000 004C                 LED_2 = onBool;
+; 0000 004C             LED_2 = onBool;
 	RCALL SUBOPT_0x2
-; 0000 004D                 delay_ms(100);
-; 0000 004E                 LED_2 = offBool;
+; 0000 004D             delay_ms(100);
+; 0000 004E             LED_2 = offBool;
 ; 0000 004F             //1
-; 0000 0050                 LED_1 = onBool;
+; 0000 0050             LED_1 = onBool;
 	RCALL SUBOPT_0x1
-; 0000 0051                 delay_ms(100);
-; 0000 0052                 LED_1 = offBool;
+; 0000 0051             delay_ms(100);
+; 0000 0052             LED_1 = offBool;
 ; 0000 0053             //0
-; 0000 0054                 LED_0 = onBool;
+; 0000 0054             LED_0 = onBool;
 	RCALL SUBOPT_0x0
-; 0000 0055                 delay_ms(100);
-; 0000 0056                 LED_0 = offBool;
+; 0000 0055             delay_ms(100);
+; 0000 0056             LED_0 = offBool;
 ; 0000 0057 
-; 0000 0058             } else {
+; 0000 0058         } else {
 	RJMP _0x43
 _0x6:
 ; 0000 0059 
-; 0000 005A                 PORTB = 00000000;
+; 0000 005A             PORTB = 00000000;
 	LDI  R30,LOW(0)
 	OUT  0x18,R30
 ; 0000 005B 
-; 0000 005C             }
+; 0000 005C         }
 _0x43:
 ; 0000 005D     }
 	RJMP _0x3
