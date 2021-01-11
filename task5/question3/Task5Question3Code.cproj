@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>6.1</ProjectVersion>
     <ToolchainName>com.HPInfoTech.CodeVisionAVR.C</ToolchainName>
-    <ProjectGuid>{C71BDA2B-423D-497C-A76A-A46C3F34E8A0}</ProjectGuid>
+    <ProjectGuid>{30444D16-423D-497C-A76A-A46C3F34E8A0}</ProjectGuid>
     <avrdevice>ATmega16</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.cof</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>Task2Question2Code</AssemblyName>
-    <Name>Task2Question2Code</Name>
-    <RootNamespace>Task2Question2Code</RootNamespace>
+    <AssemblyName>Task5Question3Code</AssemblyName>
+    <Name>Task5Question3Code</Name>
+    <RootNamespace>Task5Question3Code</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -24,19 +24,19 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <CV>
-        <CVProjectPath>"Task2Question2Code.prj"</CVProjectPath>
+        <CVProjectPath>"Task5Question3Code.prj"</CVProjectPath>
       </CV>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <CV>
-        <CVProjectPath>"Task2Question2Code.prj"</CVProjectPath>
+        <CVProjectPath>"Task5Question3Code.prj"</CVProjectPath>
       </CV>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Task2Question2Code.c">
+    <Compile Include="Task5Question3Code.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

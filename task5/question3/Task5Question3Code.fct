@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"Task5Question3Code.c" LINE:69
+timer0_ovf_isr DSTACK_USAGE:4 DSTACK_LEVEL:4 FILE:"Task5Question3Code.c" LINE:29

@@ -1180,9 +1180,9 @@ __CLEAR_SRAM:
 ;Project :
 ;Version :
 ;Date    : 1/11/2021
-;Author  :
+;Author  : sepehr rezaei - 962023012
 ;Company :
-;Comments:
+;Comments: motor - soal 2
 ;
 ;
 ;Chip type               : ATmega16
@@ -1240,52 +1240,61 @@ _timer0_ovf_isr:
 	MOV  R0,R8
 	OR   R0,R9
 	BRNE _0x5
-; 0000 0026                 PORTA.0 = 1;
-	SBI  0x1B,0
-; 0000 0027                 PORTA.1 = 0;
-	CBI  0x1B,1
-; 0000 0028                 PORTA.2 = 0;
+; 0000 0026                 PORTB.0 = 1;
+	SBI  0x18,0
+; 0000 0027                 PORTB.1 = 0;
+	CBI  0x18,1
+; 0000 0028                 PORTB.2 = 0;
 	RJMP _0x37
-; 0000 0029                 PORTA.3 = 1;
+; 0000 0029                 PORTB.3 = 1;
 ; 0000 002A             }else if (current == 1) {
 _0x5:
-	RCALL SUBOPT_0x0
+	LDI  R30,LOW(1)
+	LDI  R31,HIGH(1)
+	CP   R30,R8
+	CPC  R31,R9
 	BRNE _0xF
-; 0000 002B                 PORTA.0 = 1;
-	SBI  0x1B,0
-; 0000 002C                 PORTA.1 = 0;
-	CBI  0x1B,1
-; 0000 002D                 PORTA.2 = 1;
-	SBI  0x1B,2
-; 0000 002E                 PORTA.3 = 0;
-	CBI  0x1B,3
-; 0000 002F             }else if (current == 1) {
+; 0000 002B                 PORTB.0 = 1;
+	SBI  0x18,0
+; 0000 002C                 PORTB.1 = 0;
+	CBI  0x18,1
+; 0000 002D                 PORTB.2 = 1;
+	SBI  0x18,2
+; 0000 002E                 PORTB.3 = 0;
+	CBI  0x18,3
+; 0000 002F             }else if (current == 2) {
 	RJMP _0x18
 _0xF:
-	RCALL SUBOPT_0x0
+	LDI  R30,LOW(2)
+	LDI  R31,HIGH(2)
+	CP   R30,R8
+	CPC  R31,R9
 	BRNE _0x19
-; 0000 0030                 PORTA.0 = 0;
-	CBI  0x1B,0
-; 0000 0031                 PORTA.1 = 1;
-	SBI  0x1B,1
-; 0000 0032                 PORTA.2 = 1;
-	SBI  0x1B,2
-; 0000 0033                 PORTA.3 = 0;
-	CBI  0x1B,3
-; 0000 0034             }else if (current == 1) {
+; 0000 0030                 PORTB.0 = 0;
+	CBI  0x18,0
+; 0000 0031                 PORTB.1 = 1;
+	SBI  0x18,1
+; 0000 0032                 PORTB.2 = 1;
+	SBI  0x18,2
+; 0000 0033                 PORTB.3 = 0;
+	CBI  0x18,3
+; 0000 0034             }else if (current == 3) {
 	RJMP _0x22
 _0x19:
-	RCALL SUBOPT_0x0
+	LDI  R30,LOW(3)
+	LDI  R31,HIGH(3)
+	CP   R30,R8
+	CPC  R31,R9
 	BRNE _0x23
-; 0000 0035                 PORTA.0 = 0;
-	CBI  0x1B,0
-; 0000 0036                 PORTA.1 = 1;
-	SBI  0x1B,1
-; 0000 0037                 PORTA.2 = 0;
+; 0000 0035                 PORTB.0 = 0;
+	CBI  0x18,0
+; 0000 0036                 PORTB.1 = 1;
+	SBI  0x18,1
+; 0000 0037                 PORTB.2 = 0;
 _0x37:
-	CBI  0x1B,2
-; 0000 0038                 PORTA.3 = 1;
-	SBI  0x1B,3
+	CBI  0x18,2
+; 0000 0038                 PORTB.3 = 1;
+	SBI  0x18,3
 ; 0000 0039             }
 ; 0000 003A         }
 _0x23:
@@ -1363,12 +1372,12 @@ _main:
 ; 0000 0051     PINC = 0x00;
 	OUT  0x13,R30
 ; 0000 0052 
-; 0000 0053     DDRA = 0xff;
+; 0000 0053     DDRB = 0xff;
 	LDI  R30,LOW(255)
-	OUT  0x1A,R30
-; 0000 0054     PORTA = 0x00;
+	OUT  0x17,R30
+; 0000 0054     PORTB = 0x00;
 	LDI  R30,LOW(0)
-	OUT  0x1B,R30
+	OUT  0x18,R30
 ; 0000 0055 
 ; 0000 0056     TCCR0=(0<<WGM00) | (0<<COM01) | (0<<COM00) | (0<<WGM01) | (1<<CS02) | (0<<CS01) | (0<<CS00);
 	LDI  R30,LOW(4)
@@ -1462,14 +1471,6 @@ _0x36:
 ; .FEND
 
 	.CSEG
-;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:1 WORDS
-SUBOPT_0x0:
-	LDI  R30,LOW(1)
-	LDI  R31,HIGH(1)
-	CP   R30,R8
-	CPC  R31,R9
-	RET
-
 
 	.CSEG
 ;END OF CODE MARKER

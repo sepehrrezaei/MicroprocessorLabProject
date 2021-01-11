@@ -7,9 +7,9 @@ A=
 C=
 D=1/11/2021
 Files=1
-F1=Task2Question2Code.c
+F1=Task5Question2Code.c
 OpenedFiles=1
-OF1=Task2Question2Code.c
+OF1=Task5Question2Code.c
 Active1=1
 DebugOutputListFilesDirectory=Debug\List
 DebugOutputObjectFilesDirectory=Debug
@@ -27,7 +27,7 @@ Active0=0
 EditorPanel0=0
 PageIndex0=0
 EditorPanel1=0
-TimeStamp1=1378576850
+TimeStamp1=1378585748
 PageIndex1=1
 [CompilerDebug]
 Chip=ATmega16
@@ -127,7 +127,7 @@ WatchAVR8LAutoVariables=0
 UseEEPROMLocation0=1
 RebuildAll=0
 LinkageInformationPresent=1
-COFFileTimeStamp=1378576853
+COFFileTimeStamp=1378585749
 Build=3
 [DefinedSymbolsDebug]
 Count=0
@@ -345,46 +345,39 @@ L31=Hardware Stack size: 768 byte(s)
 L32=
 L33=Heap size: 0 byte(s)
 L34=
-Lines=37
 L35=EEPROM usage: 0 byte(s), 0.0% of EEPROM
-L36=Program size: 206 words (412 bytes), 2.5% of FLASH
-L37=1 words (2 bytes), 0.5% reduced by Code Compression
+L36=Program size: 210 words (420 bytes), 2.6% of FLASH
+L37=0 words (0 bytes), 0.0% reduced by Code Compression
+Lines=37
 [BuildInfoAssembler]
-Lines=12
 L1=AVRASM: AVR macro assembler 2.1.30 (build 592 Nov  7 2008 12:38:17)
 L2=Copyright (C) 1995-2008 ATMEL Corporation
 L3=
-L4=Y:\task5\question2\Debug\List\Task2Question2Code.asm(1477): No EEPROM data, deleting Y:\task5\question2\Debug\Exe\Task2Question2Code.eep
+L4=Y:\task5\question2\Debug\List\Task5Question2Code.asm(1478): No EEPROM data, deleting Y:\task5\question2\Debug\Exe\Task5Question2Code.eep
 L5=
 L6=ATmega16 memory use summary [bytes]:
 L7=Segment   Begin    End      Code   Data   Used    Size   Use%
 L8=---------------------------------------------------------------
-L9=[.cseg] 0x000000 0x00019c    412      0    412   16384   2.5%
+L9=[.cseg] 0x000000 0x0001a4    420      0    420   16384   2.6%
 L10=[.dseg] 0x000060 0x000160      0      0      0    1024   0.0%
 L11=[.eseg] 0x000000 0x000000      0      0      0     512   0.0%
 L12=
-[HeadersList]
-Files=1
-F1=Y:\task5\question2\Task2Question2Code.c
-[Header1]
-Files=2
-F1=C:\cvavr\inc\mega16.h
-F2=C:\cvavr\inc\mega16_bits.h
+Lines=12
 [Bookmarks0]
 Row=0
 Column=0
 ScrollPosX=0
 ScrollPosY=0
-TimeStamp=1378576936
+TimeStamp=1378585369
 [BookmarksFoldedCode]
 Files=1
-F1=Task2Question2Code.c
+F1=Task5Question2Code.c
 [Bookmarks1]
-TimeStamp=1378576850
-Row=64
-Column=16
+TimeStamp=1378585748
+Row=82
+Column=8
 ScrollPosX=0
-ScrollPosY=39
+ScrollPosY=59
 BK0=-1
 BK1=-1
 BK2=-1
@@ -395,5 +388,12 @@ BK6=-1
 BK7=-1
 BK8=-1
 BK9=-1
+[HeadersList]
+Files=1
+F1=Y:\task5\question2\Task5Question2Code.c
+[Header1]
+Files=2
+F1=C:\cvavr\inc\mega16.h
+F2=C:\cvavr\inc\mega16_bits.h
 [FoldedCode1]
 Blocks=0
