@@ -1,0 +1,7 @@
+VERSION:3 SOURCE_TIMESTAMP:522B69D2
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega16.h"
+NODE:V LEVEL:0 LINE:27 "timerZeroOverFlow -> R4,R5"
+NODE:V LEVEL:0 LINE:28 "startedTime -> R6,R7"
+NODE:V LEVEL:0 LINE:29 "current -> R8,R9"
+NODE:F LEVEL:0 LINE:31 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:74 "main(void)"
